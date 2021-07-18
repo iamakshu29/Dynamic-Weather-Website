@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yomogi", cursive;
+}
+p {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
+body {
+  width: 100%;
+}
+.main-body {
+  background-image: url(images/background-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.current-day {
+  width: 80%;
+  margin: auto;
+}
+
+.time{
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.today_date{
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.temp-weath {
+  display: flex;
+  justify-content: space-around;
+}
+
+.temperature {
+  font-size: 80px;
+}
+
+.fa-temperature-high {
+  font-size: 60px;
+}
+
+.weather {
+  font-size: 50px;
+}
+
+.weather-desc {
+  font-size: 30px;
+}
+
+.weath-img {
+  border-radius: 50%;
+}
+
+.weath-desc {
+  display: flex;
+}
+
+.current-table {
+  margin-top: 70px;
+  border: 1px solid black;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.card {
+  background-color: transparent;
+}
+
+td,
+tr {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
+
+.card-body {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.card-body h5,
+.card-body p {
+  color: white;
+}
+
+.fa-search-location {
+  color: white;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .temp-weath{
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+
+  .days{
+    flex-wrap: wrap;
+  }
+  .temperature {
+    font-size: 60px;
+  }
+  .fa-temperature-high {
+    font-size: 40px;
+  }
+}
